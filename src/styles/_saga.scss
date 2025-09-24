@@ -1,0 +1,74 @@
+.metal-gear {
+    background-color: black;
+    color: beige;
+
+    .container {
+        display: block;
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 20px;
+        border-bottom: 1px solid gray;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+            .game-cover {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 10px;
+
+                img {
+                    width: 120px;
+                    margin-left: auto;
+                    margin-right: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                }
+
+                p {
+                    flex: 1;
+                    font-size: 1em;
+                    line-height: 1.4em;
+                }
+
+                strong {
+                    color: lightgreen;
+                }
+            }
+        }
+
+        &:nth-child(even) {
+            .game-cover {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                padding: 10px;
+
+                img {
+                    width: 120px;
+                    padding-right: 30px;
+                    margin-right: auto;
+                    margin-left: 15px;
+                    border-radius: 5px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+                }
+
+                p {
+                    flex: 1;
+                    font-size: 1em;
+                    line-height: 1.4em;
+                }
+
+                strong {
+                    color: lightgreen;
+                }
+            }
+        }
+    }
+}
+

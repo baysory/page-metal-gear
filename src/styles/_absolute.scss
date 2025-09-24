@@ -1,0 +1,14 @@
+.absolute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    &--img {
+        text-align: center;
+        img {
+            height: 80vh;
+            border-radius: 400px;
+        }
+        }
+    } 
